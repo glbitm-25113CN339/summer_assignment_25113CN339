@@ -3,10 +3,15 @@ int main(){
     int n,factorial;
     printf("given no:");
     scanf("%d",&n);
-    factorial=1;
+    if(n==0){
+        printf("factorial=1");
+    }
+    else{
+        factorial=1;
     for(int i=1;i<=n;i++){
         factorial=factorial*i;
     }
     printf("%d",factorial);
-    return 0;
+} 
+return 0;
 }
